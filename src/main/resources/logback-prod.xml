@@ -33,7 +33,7 @@
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>INFO</level>
             <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
+            <onMismatch>ACCEPT</onMismatch>
         </filter><!-- 레벨별 필터링이 필요없을 경우 filter class 관련된 부분을 삭제하면 됨-->
         <encoder>
             <charset>utf8</charset>
@@ -53,7 +53,7 @@
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>WARN</level>
             <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
+            <onMismatch>ACCEPT</onMismatch>
         </filter>
         <encoder>
             <charset>utf8</charset>
@@ -73,7 +73,7 @@
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>ERROR</level>
             <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
+            <onMismatch>ACCEPT</onMismatch>
         </filter><!-- 레벨별 필터링이 필요없을 경우 filter class 관련된 부분을 삭제하면 됨-->
         <encoder>
             <charset>utf8</charset>
