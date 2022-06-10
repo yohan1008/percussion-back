@@ -29,7 +29,7 @@
     </appender>
 
     <appender name="INFO_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>./logs/info/info.log</file><!-- 파일을 저장할 경로를 정한다 -->
+        <file>/home/ubuntu/proj/percussion-back/logs/info/info.log</file><!-- 파일을 저장할 경로를 정한다 -->
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>INFO</level>
             <onMatch>ACCEPT</onMatch>
@@ -40,7 +40,7 @@
             <pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %logger{35} - %msg%n</pattern><!-- 해당 패턴 네이밍으로 현재 로그가 기록됨 -->
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>./was-logs/info.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern><!-- 해당 패턴 네이밍으로 이전 파일이 기록됨 -->
+            <fileNamePattern>/home/ubuntu/proj/percussion-back/logs/was-logs/info.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern><!-- 해당 패턴 네이밍으로 이전 파일이 기록됨 -->
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>100MB</maxFileSize><!-- 한 파일의 최대 용량 -->
             </timeBasedFileNamingAndTriggeringPolicy>
@@ -49,7 +49,7 @@
     </appender>
 
     <appender name="WARN_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>./logs/debug/debug.log</file>
+        <file>/home/ubuntu/proj/percussion-back/logs/debug/debug.log</file>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>WARN</level>
             <onMatch>ACCEPT</onMatch>
@@ -60,7 +60,7 @@
             <pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>./was-logs/warn.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <fileNamePattern>/home/ubuntu/proj/percussion-back/logs/was-logs/warn.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>100MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
@@ -69,7 +69,7 @@
     </appender>
 
     <appender name="ERROR_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>./logs/error/error.log</file><!-- 파일을 저장할 경로를 정한다 -->
+        <file>/home/ubuntu/proj/percussion-back/logs/error/error.log</file><!-- 파일을 저장할 경로를 정한다 -->
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>ERROR</level>
             <onMatch>ACCEPT</onMatch>
@@ -80,7 +80,7 @@
             <pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %logger{35} - %msg%n</pattern><!-- 해당 패턴 네이밍으로 현재 로그가 기록됨 -->
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>./was-logs/error.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern><!-- 해당 패턴 네이밍으로 이전 파일이 기록됨 -->
+            <fileNamePattern>/home/ubuntu/proj/percussion-back/logs/was-logs/error.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern><!-- 해당 패턴 네이밍으로 이전 파일이 기록됨 -->
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>100MB</maxFileSize><!-- 한 파일의 최대 용량 -->
             </timeBasedFileNamingAndTriggeringPolicy>
