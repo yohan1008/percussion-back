@@ -30,7 +30,7 @@ public class TestController {
     @GetMapping("test")
     @ResponseBody
     public String test() {
-        logger.info("test API 호출");
+        logger.info("test API 호출 성공");
         logger.trace("Trace");
         logger.debug("Debug");
         logger.info("Info");
