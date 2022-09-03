@@ -69,7 +69,7 @@ public class TestController {
     @GetMapping("test-insert")
     @ResponseBody
     public int insert(@RequestParam("testStr") String testStr) {
-        logger.info("test-insert API 호출 성공");
+        logger.info("test-insert API 호출");
         TestDomain domain = new TestDomain();
         domain.setTestStr(testStr);
         int result = testService.insert(domain);
